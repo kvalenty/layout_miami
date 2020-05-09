@@ -3707,10 +3707,17 @@ textarea {
     height: 256px;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 8px; }
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
     @media (max-width: 720px) {
       .gallery__image {
         height: 131px; } }
+    .gallery__image:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .gallery__location, .gallery__link-coordinates {
     font-weight: bold;
     font-size: 16px;
