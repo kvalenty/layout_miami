@@ -2517,7 +2517,7 @@ textarea {
   background-color: #0075ff;
   padding: 24px 24px 60px 20px;
   z-index: 2;
-  overflow: scroll;
+  overflow: auto;
   -webkit-transform: translateX(320px);
           transform: translateX(320px);
   -webkit-transition: -webkit-transform 0.3s;
