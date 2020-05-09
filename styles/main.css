@@ -1097,13 +1097,12 @@ textarea {
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
   .promo__toggler {
-    display: none;
-    z-index: 3; }
+    display: none; }
     .promo__toggler:checked ~ .promo__toggle-nav {
       background-color: #0067df;
       right: 0; }
     .promo__toggler:checked ~ .promo__menu-toggler {
-      z-index: 2; }
+      z-index: 1; }
     .promo__toggler:checked ~ .promo__menu-toggler::after {
       width: 16px;
       height: 16px;
@@ -1160,7 +1159,8 @@ textarea {
   .promo__title {
     position: absolute;
     bottom: 25%;
-    max-width: 32%;
+    max-width: 48%;
+    max-height: 125px;
     font-size: 60px;
     font-weight: bold;
     color: #fff;
@@ -2730,7 +2730,7 @@ textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
-    @media (max-width: 720px) {
+    @media (max-width: 644px) {
       .consultation__items {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -4533,7 +4533,7 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media (max-width: 720px) {
+    @media (max-width: 600px) {
       .contacts__items {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -4558,7 +4558,8 @@ textarea {
             -ms-flex-direction: column;
                 flex-direction: column; } }
   .contacts__mobile-contact, .contacts__physical-address {
-    width: 38%; }
+    width: 38%;
+    margin-bottom: 32px; }
     @media (max-width: 720px) {
       .contacts__mobile-contact, .contacts__physical-address {
         width: 65%; } }
@@ -4567,10 +4568,16 @@ textarea {
     font-size: 14px;
     line-height: 27px;
     color: #9fadc2; }
-  .contacts__address {
+  .contacts__link {
     margin-bottom: 24px;
     font-size: 16px;
-    line-height: 27px; }
+    line-height: 27px;
+    text-decoration: none;
+    color: #3e3e3e;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .contacts__link:hover {
+      color: #0067df; }
   .contacts__form {
     width: 100%; }
 
