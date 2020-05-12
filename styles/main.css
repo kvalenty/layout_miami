@@ -2502,8 +2502,9 @@ textarea {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  width: 320px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2518,8 +2519,8 @@ textarea {
   padding: 24px 24px 60px 20px;
   z-index: 2;
   overflow: auto;
-  -webkit-transform: translateX(320px);
-          transform: translateX(320px);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -2531,7 +2532,7 @@ textarea {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   .nav-toggle__top {
-    width: 176px;
+    width: 57%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
